@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kullanici"
+        android:icon="@drawable/kullanici_simge"
+        android:title="Kullanıcı" />
+
+    <item
+        android:id="@+id/egitimler"
+        android:icon="@drawable/egitim_ara_simge"
+        android:title="Eğitimler"/>
+</menu>

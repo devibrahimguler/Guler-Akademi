@@ -1,0 +1,45 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.hakkinda.HakkindaFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/geri_hakkinda_fr"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/geri"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bu Uygulama Eğitim ve Ögrenim için Tasarlanmıştır."
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versiyon : 1.0.0"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "464787480708",
+    "project_id": "guler-akademi-ea258",
+    "storage_bucket": "guler-akademi-ea258.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464787480708:android:a3d312fea22ffac296e2d1",
+        "android_client_info": {
+          "package_name": "com.muntazif.gulerakademi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464787480708-jc6afkl7ipipvjhn0e7ded2gv4rta0hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf_6ySBGR8MqqUXZI8773UkBlPo7lopF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464787480708-jc6afkl7ipipvjhn0e7ded2gv4rta0hi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

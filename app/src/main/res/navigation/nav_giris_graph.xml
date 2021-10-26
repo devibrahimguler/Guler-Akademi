@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/kullanici">
+
+    <fragment
+        android:id="@+id/kullanici"
+        android:name="com.muntazif.gulerakademi.view.kullanici.KullaniciFragment"
+        android:label="KullaniciFragment" >
+        <action
+            android:id="@+id/action_kullanici_to_profilDuzenleActivity"
+            app:destination="@id/profilDuzenleActivity" />
+        <action
+            android:id="@+id/action_kullanici_to_profilDuzenleActivity2"
+            app:destination="@id/profilDuzenleActivity" />
+        <action
+            android:id="@+id/action_kullanici_to_egitimPaylasActivity"
+            app:destination="@id/egitimPaylasActivity" />
+        <action
+            android:id="@+id/action_kullanici_to_hakkindaFragment"
+            app:destination="@id/hakkindaFragment" />
+        <action
+            android:id="@+id/action_kullanici_to_egitimDetayKullaniciFragment"
+            app:destination="@id/egitimDetayKullaniciFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/egitimler"
+        android:name="com.muntazif.gulerakademi.view.egitim.EgitimFragment"
+        android:label="EgitimFragment" >
+        <action
+            android:id="@+id/action_egitimler_to_egitimDetayFragment"
+            app:destination="@id/egitimDetayFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/profilDuzenleActivity"
+        android:name="com.muntazif.gulerakademi.view.kullanici.ProfilDuzenleActivity"
+        android:label="activity_profil_duzenle"
+        tools:layout="@layout/activity_profil_duzenle" />
+    <activity
+        android:id="@+id/egitimPaylasActivity"
+        android:name="com.muntazif.gulerakademi.view.egitim.EgitimPaylasActivity"
+        android:label="activity_egitim_paylas"
+        tools:layout="@layout/activity_egitim_paylas" />
+    <fragment
+        android:id="@+id/egitimDetayFragment"
+        android:name="com.muntazif.gulerakademi.view.egitim.EgitimDetayFragment"
+        android:label="fragment_egitim_detay"
+        tools:layout="@layout/fragment_egitim_detay" >
+        <argument
+            android:name="egitimId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_egitimDetayFragment_to_egitimler"
+            app:destination="@id/egitimler" />
+    </fragment>
+    <fragment
+        android:id="@+id/hakkindaFragment"
+        android:name="com.muntazif.gulerakademi.view.hakkinda.HakkindaFragment"
+        android:label="fragment_hakkinda"
+        tools:layout="@layout/fragment_hakkinda" >
+        <action
+            android:id="@+id/action_hakkindaFragment_to_kullanici"
+            app:destination="@id/kullanici" />
+    </fragment>
+    <fragment
+        android:id="@+id/egitimDetayKullaniciFragment"
+        android:name="com.muntazif.gulerakademi.view.egitim.EgitimDetayKullaniciFragment"
+        android:label="fragment_egitim_detay_kullanici"
+        tools:layout="@layout/fragment_egitim_detay_kullanici" >
+        <action
+            android:id="@+id/action_egitimDetayKullaniciFragment_to_kullanici"
+            app:destination="@id/kullanici" />
+        <argument
+            android:name="egitimId"
+            app:argType="string" />
+    </fragment>
+</navigation>

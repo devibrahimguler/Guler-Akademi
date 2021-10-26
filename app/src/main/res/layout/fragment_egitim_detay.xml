@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.egitim.EgitimDetayFragment">
+    <data>
+        <variable
+            name="egitimDetay"
+            type="com.muntazif.gulerakademi.model.Egitimler" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/geri_egitim_detay_fr"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/geri"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/resim_egitim_detay_fr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:downloadImage="@{egitimDetay.egitimResim}"/>
+            <TextView
+                android:id="@+id/isim_egitim_detay_fr"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{egitimDetay.egitimIsim}"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/aciklama_egitim_detay_fr"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{egitimDetay.egitimAciklama}"
+                android:textSize="18sp"
+                android:textColor="#000" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_egitim_detay_fr"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/kaydol_egitim_detay_fr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KAYDOL"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</layout>

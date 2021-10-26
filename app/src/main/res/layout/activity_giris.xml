@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.giris.GirisActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+
+        <ImageView
+            android:id="@+id/logo_giris_ac"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo"/>
+
+        <EditText
+            android:id="@+id/email_giris_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTintMode="screen"
+            android:ems="10"
+            android:hint="Email Adresinizi Giriniz..."
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#03A9F4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/sifre_giris_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTintMode="screen"
+            android:ems="10"
+            android:hint="Şifrenizi Giriniz..."
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#03A9F4"
+            app:layout_constraintStart_toStartOf="@+id/emailText"
+            app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+        <Button
+            android:id="@+id/giris_yap_giris_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GİRİŞ YAP"
+            android:textColor="#00BCD4"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/sifremi_unuttum_giris_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Şifremi unuttum!"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="#00BCD4" />
+
+        <TextView
+            android:id="@+id/kayit_git_giris_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Yeni hesap oluştur!"
+            android:textAlignment="center"
+            android:textStyle="italic|bold"
+            android:textSize="18sp"
+            android:textColor="#00BCD4" />
+
+    </LinearLayout>
+</layout>

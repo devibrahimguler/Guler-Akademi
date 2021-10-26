@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.kullanici.ProfilDuzenleActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/geri_profil_duzenle_ac"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/geri"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/resim_profil_duzenle_ac"
+            android:src="@drawable/kullanici_resmi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
+            app:civ_border_width="2dp"
+            android:clickable="true"
+            app:civ_border_color="#FF000000"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:theme="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/isim_profil_duzenle_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="İsminizi Giriniz..."
+            android:textColor="#03A9F4"
+            android:backgroundTintMode="screen" />
+
+        <EditText
+            android:id="@+id/kimlik_profil_duzenle_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kimlik Giriniz..."
+            android:layout_marginTop="10dp"
+            android:textColor="#03A9F4"
+            android:backgroundTintMode="screen"/>
+
+        <EditText
+            android:id="@+id/sifre_profil_duzenle_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Şifrenizi Giriniz..."
+            android:layout_marginTop="10dp"
+            android:textColor="#03A9F4"
+            android:backgroundTintMode="screen"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/duzenle_profil_duzenle_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="DÜZENLE"
+            android:textColor="#00BCD4" />
+
+    </LinearLayout>
+</layout>

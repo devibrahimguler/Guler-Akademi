@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.egitim.EgitimPaylasActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relative_1_egitim_paylas_ac"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/geri_egitim_paylas_ac"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/geri"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/resim_egitim_paylas_ac"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/takvim_simge"
+            android:layout_below="@+id/relative_1_egitim_paylas_ac"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/isim_egitim_paylas_ac"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:hint="Egitim İsim..."
+            android:background="@null"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/resim_egitim_paylas_ac"/>
+
+        <EditText
+            android:id="@+id/aciklama_egitim_paylas_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/paylas_egitim_paylas_ac"
+            android:layout_below="@+id/isim_egitim_paylas_ac"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:background="@null"
+            android:hint="Egitim Detay..." />
+
+        <Button
+            android:id="@+id/paylas_egitim_paylas_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="10dp"
+            android:text="Paylaş" />
+    </RelativeLayout>
+
+</layout>

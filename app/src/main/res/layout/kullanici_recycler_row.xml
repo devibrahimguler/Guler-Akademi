@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="kullanici"
+            type="com.muntazif.gulerakademi.model.Egitimler" />
+    </data>
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/resim_kullanici_recycler_row"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:downloadImage="@{kullanici.egitimResim}"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/id_kullanici_recycler_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{kullanici.egitimId}"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/isim_kullanici_recycler_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@{kullanici.egitimIsim}"
+            android:layout_below="@+id/resim_kullanici_recycler_row"/>
+        <ProgressBar
+            android:id="@+id/durum_cubugu_kullanici_recycler_row"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isim_kullanici_recycler_row"/>
+    </RelativeLayout>
+</layout>

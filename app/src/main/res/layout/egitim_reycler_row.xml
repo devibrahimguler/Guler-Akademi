@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data>
+        <variable
+            name="egitimler"
+            type="com.muntazif.gulerakademi.model.Egitimler" />
+    </data>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00B8D4"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/resim_egitim_recycler_row"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:downloadImage="@{egitimler.egitimResim}"
+            android:src="@drawable/takvim_simge"/>
+        <TextView
+            android:id="@+id/id_egitim_recycler_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@{String.valueOf(egitimler.egitimId)}"/>
+        <LinearLayout
+            android:id="@+id/linear_1_egitim_recycler_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toStartOf="@+id/kayit_egitim_recycler_row"
+            android:layout_toEndOf="@+id/resim_egitim_recycler_row">
+            <TextView
+                android:id="@+id/isim_egitim_recycler_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{egitimler.egitimIsim}"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/aciklama_egitim_recycler_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{egitimler.egitimAciklama}"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/kayit_egitim_recycler_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KAYDOL"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </LinearLayout>
+</layout>
